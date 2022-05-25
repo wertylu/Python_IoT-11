@@ -20,6 +20,5 @@ def main():
     print(mammal_bober.eat_fish(fish_joe))
 
 
-
 if __name__ == "__main__":
     main()
