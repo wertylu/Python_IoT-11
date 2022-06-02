@@ -1,5 +1,5 @@
-from Labs.iot.nulp.Objects.Animal import AnimalBeing
-from Labs.iot.nulp.Objects.Fish import Fish
+from Lab1.Animal import AnimalBeing
+from Lab1.Fish import Fish
 
 
 class Mammal(AnimalBeing):
@@ -8,11 +8,11 @@ class Mammal(AnimalBeing):
         self.__herbivorous = herbivorous
         self.__name = name
         if self.__name == "bubr":
-            for i in range(0, 500):
+            for i in range(0, 10):
                 print("BOBER KURWA JA PIERDOLIE JAKIE BYDLE")
 
     def check_if_alive(self) -> str:
-        if self.__is_alive:
+        if self._is_alive:
             return "The mammal is alive"
         else:
             return "The mammal is dead"

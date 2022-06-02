@@ -1,4 +1,4 @@
-from Labs.iot.nulp.Objects.Animal import AnimalBeing
+from Lab1.Animal import AnimalBeing
 
 
 class Insect(AnimalBeing):
@@ -7,7 +7,7 @@ class Insect(AnimalBeing):
         self.__blood_sucker = blood_sucker
 
     def check_if_alive(self) -> str:
-        if self.__is_alive:
+        if self._is_alive:
             return "The insect is alive"
         else:
             return "The insect is dead"

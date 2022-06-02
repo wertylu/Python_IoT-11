@@ -1,4 +1,4 @@
-from Labs.iot.nulp.Objects.Animal import AnimalBeing
+from Lab1.Animal import AnimalBeing
 
 
 class Bird(AnimalBeing):
@@ -7,7 +7,7 @@ class Bird(AnimalBeing):
         self.__night_bird = night_bird
 
     def check_if_alive(self) -> str:
-        if self.__is_alive:
+        if self._is_alive:
             return "The bird is alive"
         else:
             return "The bird is dead"
