@@ -1,5 +1,8 @@
+import math
+
+
 class Coordinate:
-    def __init__(self, coordinate: tuple):
+    def __init__(self, coordinate: list):
         self.coordinate = coordinate
         self.next = None
 
@@ -14,6 +17,9 @@ class SingleLinkedList:
     def __init__(self):
         self.head = None
         self.tail = None
+
+    def sum(self):
+        return math.sqrt((self.head.coordinate[0]-self.tail.coordinate[0])**2 + (self.head.coordinate[1]-self.tail.coordinate[1])**2)
 
     def add_list_item(self, item):
         if not isinstance(item, Coordinate):
@@ -39,7 +45,7 @@ class SingleLinkedList:
         current_node = self.head
 
         while current_node is not None:
-            print(current_node.data)
+            print(current_node.coordinate)
             current_node = current_node.next
         return
 
