@@ -22,8 +22,6 @@ class SingleLinkedList:
         return math.sqrt((self.head.coordinate[0]-self.tail.coordinate[0])**2 + (self.head.coordinate[1]-self.tail.coordinate[1])**2)
 
     def add_list_item(self, item):
-        if not isinstance(item, Coordinate):
-            item = Coordinate(item)
         if self.head is None:
             self.head = item
         else:
@@ -49,7 +47,7 @@ class SingleLinkedList:
             current_node = current_node.next
         return
 
-    def unordered_search(self, value):
+    def search(self, value):
         current_node = self.head
         node_id = 1
         results = []

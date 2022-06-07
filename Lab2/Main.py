@@ -13,6 +13,7 @@ def main():
     print(linked_list.list_length())
     print(linked_list.output_list())
     print('%.3f' % linked_list.sum())
+    print(linked_list.search([0, 0]))
 
 
 if __name__ == '__main__':
